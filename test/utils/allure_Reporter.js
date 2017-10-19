@@ -1,6 +1,5 @@
 var events = require ('events');
 var util = require('util');
-var config_l = require('../config');
 var Allure = require ('allure-js-commons');
 var Step = require  ('allure-js-commons/beans/step');
 var step_name = require('./info_steps');
