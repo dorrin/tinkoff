@@ -1,0 +1,32 @@
+{
+  "name": "tinkoff_demo",
+  "version": "0.0.1",
+  "description": "Automation UI tests for Tinkoff website",
+  "directories": {
+    "test": "test"
+  },
+
+  "scripts": {
+    "test:chrome": "wdio ./test/demo.conf.js",
+    "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dorrin/tinkoff.git"
+  },
+  "Dependencies": {
+    "allure-commandline": "^2.3.4",
+    "allure-js-commons": "^1.3.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.5.0",
+    "mocha-allure-reporter": "^1.3.2",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-junit-reporter": "^0.3.1",
+    "wdio-mocha-framework": "^0.5.11",
+    "wdio-spec-reporter": "^0.1.0",
+    "webdriverio": "^4.8.0",
+    "selenium-standalone": "^6.9.0"
+  },
+  "author": "Dmitry Trukhin"
+}
